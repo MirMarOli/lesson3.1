@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{ 
+    margin:0;
+    border: 0;
+    padding:0;
+    font-family: 'Muli', sans-serif;
+}
+body {
+    width: 100%;
+    background-color: #F0F2F2;
+    margin: 0;
+}
+/*header styling*/
+
+
+#header-container {
+    background-color: #171212;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.header-container {
+    flex-grow: 1;
+}
+
+.header-container .logo-image {
+    width: 25px;
+    height: auto;
+    padding-left: 15px;
+    animation-name: logo;
+    position: relative;
+    animation-duration: 3s; 
+    animation-direction: reverse;
+}
+
+.navbar {
+    margin-right: 15px; 
+    flex-grow: 4;
+    text-align: right
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline;  
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F27373;
+    animation-name: navbar;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.navbar a:hover {
+    color: #CE2474;
+    transition: 1s;
+}
+
+.navbar a:visited {
+    color: #CE2474;
+}
+
+
+@keyframes logo {
+    0% {transform: rotate(0deg);left: 0px;}
+    100% {transform: rotate(90deg);left: 100%;}
+}
+
+@keyframes navbar {
+    0% {color: #F6905B;}
+    25% {color: #F27373;}
+    50% {color: #CE2474;}
+    100% {color: #F27373;}
+}
+
+/*this is section1*/
+
+#section1 {
+}
+
+.hero-image {  
+    background-image: linear-gradient(90deg, #F6905B, #CE2474), url(assets/images/hero-bg.jpg);
+    height: 400px;
+}
+
+.hero-text {
+    padding-top: 150px;
+    text-align: center;
+    text-shadow: 3px -3px 13px #0F0604;
+}
+
+span:before{
+    content: ""; 
+    animation-name: hero-text;
+    overflow: hidden;
+    animation: ty
+    border-right: .15em solid; 
+    animation-duration: 6s;
+    animation-iteration-count: infinite
+    
+}
+
+.hero-text h1 {
+    font-size: 5em;
+}
+
+.hero-text button {
+    
+}
+
+    
+@keyframes hero-text {
+    25% {content: "Follow"; }
+    50% {content: "the white"; }
+    75% {content: "rabbit"; }
+    100% {content: "NEO"; }
+}
+    
+
+
